@@ -9,8 +9,9 @@
 ### API TEST Document -> Postman
 https://documenter.getpostman.com/view/25550859/2s9YknA2n4
 
-### Temp_Data_For_Test
-![image](https://github.com/carrier1269/Conv_restaurant_backend/assets/58325946/228574dd-7467-430e-8c74-1006ffbb9ab1)
+### User_DB_For_Test
+![image](https://github.com/GDSC-Daejin/project-Isher-backend/assets/58325946/75c819c3-4872-4444-8d05-bbad5f4852a5)
+
 
 
 ### 참고 문헌
