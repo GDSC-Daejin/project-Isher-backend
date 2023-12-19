@@ -1,0 +1,26 @@
+
+DROP TABLE WaffleUser 
+	CASCADE CONSTRAINTS
+
+CREATE TABLE WaffleUser (
+	UserId VARCHAR2(50) NOT NULL,
+	Password VARCHAR2(100) NOT NULL,
+	Nickname VARCHAR2(50) NOT NULL,
+	Email VARCHAR2(150) NOT NULL,
+	Age NUMBER NOT NULL,
+	Gender VARCHAR2(20) NOT NULL,
+	JoinDate DATE NOT NULL
+)
+
+ALTER TABLE WaffleUser
+	ADD
+		CONSTRAINT PK_WaffleUser
+		PRIMARY KEY (
+			UserId
+		);
+        
+DESC WAFFLEUSER;
+        
+INSERT INTO WAFFLEUSER VALUES ('chlrkdls1269', 'waffle1234', '와플유저12', 'chlrkdls1269@gmail.com', 23, '남성', SYSDATE);
+
+COMMIT;
