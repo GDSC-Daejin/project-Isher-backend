@@ -6,7 +6,10 @@
 
 ![image](https://github.com/carrier1269/Conv_restaurant_backend/assets/58325946/c00ff63b-d836-41f6-8866-c0ceb8a6583d)
 
-### API TEST Document -> Postman
+### Swagger (EC2 배포 서버)
+http://ec2-43-201-12-132.ap-northeast-2.compute.amazonaws.com:8080/swagger-ui/index.html
+
+### Postman
 https://documenter.getpostman.com/view/25550859/2s9YknA2n4
 
 ### 참고 문헌
