@@ -4,15 +4,10 @@
 - Soopeach : Android, Chan : Frontend, Louis : Backend
 - 이 Repository는 백엔드 개발 전용 개인 Repository입니다.
 
-![image](https://github.com/carrier1269/Conv_restaurant_backend/assets/58325946/20080d77-b7f3-4861-b2f1-381510e375c9)
+![image](https://github.com/carrier1269/Conv_restaurant_backend/assets/58325946/c00ff63b-d836-41f6-8866-c0ceb8a6583d)
 
 ### API TEST Document -> Postman
 https://documenter.getpostman.com/view/25550859/2s9YknA2n4
-
-### User_DB_For_Test
-![image](https://github.com/GDSC-Daejin/project-Isher-backend/assets/58325946/75c819c3-4872-4444-8d05-bbad5f4852a5)
-
-
 
 ### 참고 문헌
 #### DB Account 추가

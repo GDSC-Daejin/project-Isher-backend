@@ -21,9 +21,7 @@ public class MemberUserDetailsService implements UserDetailsService{
 //	private IRoleRepository roleRepository; 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		MemberDto memberInfo = memberService.getStudentInfo(username);
-		System.out.println(username + "loaduser");
-		System.out.println(memberInfo);
+		MemberDto memberInfo = memberService.findMemberById(username);
 		
 		if(memberInfo == null) {
 			throw new UsernameNotFoundException("["+username+"]사용자가 존재하지 않습니다.");
@@ -34,17 +32,18 @@ public class MemberUserDetailsService implements UserDetailsService{
 		
 //		System.out.println("username : " + username + "rolename : " + request_login_user_roleName);
 		
-		String[] roles = {"ROLE_USER", "ROLE_ADMIN"};
+		
 		
 //		String[] roles = {request_login_user_roleName};
+		
+		String[] roles = {"ROLE_USER", "ROLE_ADMIN"};
 
 		List<GrantedAuthority> authorities = AuthorityUtils.createAuthorityList(roles);
 		
-		System.out.println("authorities : " + authorities);
 		// 암호화되지 않은 pwd를 사용할 경우 "{noop}"+pwd로 표기한다..
-		return new MemberUserDetails(memberInfo.getId()
-				, "{noop}" + memberInfo.getPassword()
-				, authorities, memberInfo.getEmail());
+		return new MemberUserDetails(memberInfo.getMemberId()
+				, memberInfo.getMemberPassword()
+				, authorities);
 	}
 	
 }
